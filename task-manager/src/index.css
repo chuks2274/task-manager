@@ -1,0 +1,57 @@
+/* Apply to all elements: remove default margin and padding, use border-box sizing for easier sizing, set font family */
+* {
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;  
+}
+
+/* Prevent elements with this class from being resizable */
+.no-resize {
+  resize: none;  
+}
+
+/* Style the scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px;  
+  height: 6px;  
+}
+
+/* Scrollbar track styling for WebKit browsers */
+::-webkit-scrollbar-track {
+  background: transparent;  
+}
+
+/* Scrollbar thumb styling for WebKit browsers */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);  
+  border-radius: 10px;  
+}
+
+/* Style scrollbars for Firefox and others supporting CSS Scrollbar spec */
+html {
+  scrollbar-width: thin;  
+  scrollbar-color: rgba(0, 0, 0, 0.4) transparent;  
+}
+
+/* Style for task cards */
+.task-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);  
+  border-radius: 8px;  
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  
+  margin-bottom: 1rem;  
+  cursor: pointer;  
+}
+
+/* Hover effect for task cards */
+.task-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);  
+  transform: translateY(-3px);  
+}
+
+/* Reset margin and padding and ensure full height on html, body, and root element */
+html, body, #root {
+  height: 100%;  
+  margin: 0;  
+  padding: 0;  
+}
